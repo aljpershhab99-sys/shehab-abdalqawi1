@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login • Atlas of Aetheria</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>Atlas of Aetheria</h1>
+        <small>Login</small>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="./cities.html">Cities</a>
+      <a href="./islands.html">Islands</a>
+      <a href="./university.html">Universities</a>
+      <a href="./contact.html">Contact</a>
+      <a href="./login.html" class="active">Login</a>
+      <a href="./register.html">Register</a>
+    </nav>
+
+    <div class="nav-cta">
+      <button id="burger" class="burger">☰</button>
+      <a class="btn primary" href="./register.html">Create account</a>
+    </div>
+  </div>
+
+  <div class="container mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="./cities.html">Cities</a>
+    <a href="./islands.html">Islands</a>
+    <a href="./university.html">Universities</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./login.html">Login</a>
+    <a href="./register.html">Register</a>
+  </div>
+</header>
+
+<main class="container form-wrap auth-page">
+  <!-- Left: Info card -->
+  <section class="panel reveal glow auth-card">
+    <h2>Welcome back</h2>
+    <p class="muted" style="line-height:1.7">
+      This login system is part of a front-end university project.
+      Accounts are stored locally to demonstrate form validation and interaction logic.
+    </p>
+
+    <div class="sep" style="margin:18px 0;"></div>
+
+    <ul class="muted" style="margin:0; padding-left:18px; line-height:1.9">
+      <li>No real authentication is used</li>
+      <li>Data stored locally for demo</li>
+      <li>Designed for academic demonstration</li>
+    </ul>
+  </section>
+
+  <!-- Right: Login form -->
+  <section class="panel reveal glow auth-card">
+    <form class="form" id="loginForm" novalidate>
+      <div class="field">
+        <label for="lEmail">Email</label>
+        <input class="input" id="lEmail" type="email" placeholder="you@email.com" autocomplete="email">
+        <div class="error">Please enter a valid email.</div>
+      </div>
+
+      <div class="field">
+        <label for="lPassword">Password</label>
+        <div class="input-wrap">
+          <input class="input" id="lPassword" type="password" placeholder="Your password" autocomplete="current-password">
+          <button class="icon-btn" type="button" id="toggleLoginPass" aria-label="Show password">👁</button>
+        </div>
+        <div class="error">Password is required.</div>
+      </div>
+
+      <div class="row" style="justify-content:space-between; align-items:center;">
+        <label class="check">
+          <input type="checkbox" id="rememberMe">
+          <span>Remember me</span>
+        </label>
+
+        <a class="link" href="./register.html">Create account</a>
+      </div>
+
+      <div class="row">
+        <button class="btn primary auth-primary" type="submit">
+          Login
+        </button>
+      </div>
+
+      <p id="loginStatus" class="hint" style="margin-top:10px;"></p>
+    </form>
+  </section>
+</main>
+
+<div id="toast" class="toast">Welcome</div>
+
+<footer class="footer">
+  <div class="container">
+    <div><strong>Atlas of Aetheria</strong> — Student: Shehab Aljabri</div>
+    <div>© 2026 • Sana’a University</div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/validation.js"></script>
+<script src="../js/wow-login.js"></script>
+</body>
+</html>
+

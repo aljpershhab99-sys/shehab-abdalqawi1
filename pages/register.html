@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register • Atlas of Aetheria</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="../index.html" aria-label="Atlas of Aetheria">
+      <span class="dot" aria-hidden="true"></span>
+      <div>
+        <h1>Atlas of Aetheria</h1>
+        <small>Register</small>
+      </div>
+    </a>
+
+    <nav class="nav-links nav">
+      <a href="../index.html" data-page="index.html">Home</a>
+      <a href="./cities.html" data-page="cities.html">Cities</a>
+      <a href="./islands.html" data-page="islands.html">Islands</a>
+      <a href="./university.html" data-page="university.html">Universities</a>
+      <a href="./contact.html" data-page="contact.html">Contact</a>
+      <a href="./login.html" data-page="login.html">Login</a>
+      <a href="./register.html" data-page="register.html" class="active">Register</a>
+    </nav>
+
+    <div class="nav-cta">
+      <button id="burger" class="burger">☰</button>
+      <a class="btn" href="./login.html">Sign in</a>
+    </div>
+  </div>
+
+  <div class="container mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="./cities.html">Cities</a>
+    <a href="./islands.html">Islands</a>
+    <a href="./university.html">Universities</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./login.html">Login</a>
+    <a href="./register.html">Register</a>
+  </div>
+</header>
+
+<main class="container form-wrap">
+  <section class="panel reveal">
+    <h2>Create your account</h2>
+    <p>
+      This project is front-end only. Your account is saved locally in your browser
+      for demonstration purposes.
+    </p>
+    <p class="hint">Tip: Use a real email format (example@mail.com).</p>
+  </section>
+
+  <section class="panel reveal">
+    <form class="form" id="registerForm" autocomplete="on">
+      <div class="field">
+        <label for="rName">Full name</label>
+        <input class="input" id="rName" placeholder="Your full name" autocomplete="name" />
+        <div class="error">Error</div>
+      </div>
+
+      <div class="field">
+        <label for="rEmail">Email</label>
+        <input class="input" id="rEmail" placeholder="example@email.com" autocomplete="email" />
+        <div class="error">Error</div>
+      </div>
+
+      <div class="field">
+        <label for="rPass">Password</label>
+        <input class="input" id="rPass" type="password" placeholder="At least 8 characters" autocomplete="new-password" />
+        <div class="row">
+          <button type="button" class="btn" data-toggle-pass="rPass">Show/Hide</button>
+          <span class="hint" id="passStrength">Password strength: Weak</span>
+        </div>
+        <div class="error">Error</div>
+      </div>
+
+      <div class="field">
+        <label for="rPass2">Confirm password</label>
+        <input class="input" id="rPass2" type="password" placeholder="Repeat password" autocomplete="new-password" />
+        <div class="row">
+          <button type="button" class="btn" data-toggle-pass="rPass2">Show/Hide</button>
+        </div>
+        <div class="error">Error</div>
+      </div>
+
+      <div class="row">
+        <button class="btn primary" type="submit">Create account</button>
+        <a class="btn" href="./login.html">I already have an account</a>
+      </div> 
+
+      <p class="hint" style="margin-top:10px">
+        After registration, you will be redirected to Home automatically.
+      </p>
+    </form>
+  </section>
+</main>
+
+<div id="toast" class="toast">Saved</div>
+
+<footer class="footer">
+  <div class="container">
+    <div><strong>Atlas of Aetheria</strong> — Student: Shehab Aljabri</div>
+    <div>© 2026 • Sana’a University</div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/validation.js"></script>
+<script src="../js/wow-register.js"></script>
+</body>
+</html>

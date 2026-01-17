@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact • Atlas of Aetheria</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <!-- Brand / Logo -->
+    <a class="brand" href="../index.html" aria-label="Atlas of Aetheria">
+      <div class="brand-badge" aria-hidden="true"><span>A</span></div>
+      <div class="brand-text">
+        <h1>Atlas of Aetheria</h1>
+        <small>Student project • Sana’a University</small>
+      </div>
+    </a>
+
+    <nav class="nav-links nav">
+      <a href="../index.html" data-page="index.html">Home</a>
+      <a href="./cities.html" data-page="cities.html">Cities</a>
+      <a href="./islands.html" data-page="islands.html">Islands</a>
+      <a href="./university.html" data-page="university.html">Universities</a>
+      <a href="./contact.html" data-page="contact.html" class="active">Contact</a>
+      <a href="./login.html" data-page="login.html">Login</a>
+      <a href="./register.html" data-page="register.html">Register</a>
+    </nav>
+
+    <div class="nav-cta">
+      <button id="burger" class="burger" aria-label="Open menu">☰</button>
+      <a class="btn" href="./login.html">Sign in</a>
+      <a class="btn primary" href="./register.html">Create account</a>
+    </div>
+  </div>
+
+  <div class="container mobile-menu" id="mobileMenu">
+    <a href="../index.html">Home</a>
+    <a href="./cities.html">Cities</a>
+    <a href="./islands.html">Islands</a>
+    <a href="./university.html">Universities</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./login.html">Login</a>
+    <a href="./register.html">Register</a>
+  </div>
+</header>
+
+<main class="container form-wrap" style="padding-top:26px;">
+  <!-- Left panel -->
+  <section class="panel reveal">
+    <h2>Contact</h2>
+    <p>
+      This is a university front-end project. If you have feedback, a suggestion,
+      or a quick note about the design — send it here.
+    </p>
+
+    <div class="sep" style="margin:16px 0;"></div>
+
+    <p class="hint">
+      Demo note: Messages are not sent to a server. Everything is handled locally in your browser.
+    </p>
+
+    <div class="sep" style="margin:16px 0;"></div>
+
+    <div class="kpis">
+      <div class="kpi"><b>Fast</b><span>Quick form</span></div>
+      <div class="kpi"><b>Clean</b><span>No clutter</span></div>
+      <div class="kpi"><b>Safe</b><span>Local demo</span></div>
+      <div class="kpi"><b>2026</b><span>Edition</span></div>
+    </div>
+  </section>
+
+  <!-- Right panel / form -->
+  <section class="panel reveal">
+    <h2>Send a message</h2>
+    <p class="hint" style="margin-top:-4px;">
+      Write clearly — I read every message during the project evaluation.
+    </p>
+
+    <form class="form" id="contactForm" style="margin-top:10px;">
+      <div class="field">
+        <label for="cName">Your name</label>
+        <input class="input" id="cName" placeholder="Your full name" />
+        <div class="error">Error</div>
+      </div>
+
+      <div class="field">
+        <label for="cEmail">Email</label>
+        <input class="input" id="cEmail" placeholder="name@email.com" />
+        <div class="error">Error</div>
+      </div>
+
+      <div class="field">
+        <label for="cSubject">Subject</label>
+        <input class="input" id="cSubject" placeholder="What is this about?" />
+        <div class="error">Error</div>
+      </div>
+
+      <div class="field">
+        <label for="cMsg">Message</label>
+        <textarea class="input" id="cMsg" placeholder="Write your message..."></textarea>
+        <div class="error">Error</div>
+      </div>
+
+      <div class="row">
+        <button class="btn primary" type="submit">Send</button>
+        <a class="btn" href="../index.html">Back</a>
+      </div>
+    </form>
+  </section>
+</main>
+
+<div id="toast" class="toast">Sent</div>
+
+<footer class="footer">
+  <div class="container">
+    <div><strong>Atlas of Aetheria</strong> — Student: Shehab Aljabri • Supervisor: Dr. Rasha Alqbati</div>
+    <div>© 2026 • Sana’a University</div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/validation.js"></script>
+<script src="../js/wow-contact.js"></script>
+</body>
+</html>

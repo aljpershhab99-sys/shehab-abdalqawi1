@@ -1,0 +1,163 @@
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Atlas of Aetheria</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand">
+      <span class="dot"></span>
+      <div>
+        <h1>Atlas of Aetheria</h1>
+        <small>Student project • Sana’a University</small>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./pages/cities.html">Cities</a>
+      <a href="./pages/islands.html">Islands</a>
+      <a href="./pages/university.html">Universities</a>
+      <a href="./pages/contact.html">Contact</a>
+      <a href="./pages/login.html">Login</a>
+      <a href="./pages/register.html">Register</a>
+    </nav>
+
+    <div class="nav-cta">
+      <button id="burger" class="burger">☰</button>
+      <a class="btn" href="./pages/login.html">Sign in</a>
+      <a class="btn primary" href="./pages/register.html">Create account</a>
+    </div>
+  </div>
+
+  <div class="container mobile-menu" id="mobileMenu">
+    <a href="./index.html">Home</a>
+    <a href="./pages/cities.html">Cities</a>
+    <a href="./pages/islands.html">Islands</a>
+    <a href="./pages/university.html">Universities</a>
+    <a href="./pages/contact.html">Contact</a>
+    <a href="./pages/login.html">Login</a>
+    <a href="./pages/register.html">Register</a>
+  </div>
+</header>
+
+<main class="container" style="padding:26px 0 40px;">
+
+  <!-- HERO -->
+  <section class="hero reveal" style="position:relative; overflow:hidden; border-radius:18px; min-height:420px;">
+    <!-- Video background -->
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover;"
+    >
+      <!-- غيّر الاسم لو ملفك مختلف -->
+      <source src="./videos/hero.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Dark overlay -->
+    <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,.55), rgba(0,0,0,.18));"></div>
+
+    <!-- Hero content -->
+    <div style="position:relative; padding:34px; max-width:720px;">
+      <div class="badge" style="display:inline-block; margin-bottom:10px;">Aetheria • Atlas</div>
+      <h2 style="margin:0 0 10px; font-size:44px; line-height:1.05;">
+        Explore. Learn. Imagine.
+      </h2>
+
+      <p style="margin:0 0 18px; opacity:.92; line-height:1.7; font-size:16px;">
+        This is my student project — a clean atlas idea that shows cities, islands, and universities
+        in one smooth place. Simple navigation, real images, and quick details.
+      </p>
+
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn primary" href="./pages/cities.html">Browse cities</a>
+        <a class="btn" href="./pages/islands.html">Explore islands</a>
+        <a class="btn" href="./pages/university.html">Universities</a>
+      </div>
+
+      <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+        <div class="badge">12 cities</div>
+        <div class="badge">8 islands</div>
+        <div class="badge">4 universities</div>
+        <div class="badge">2026 edition</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED INTRO -->
+<div class="section-title reveal" style="margin-top:18px;">
+  <div>
+    <h2>Discover Aetheria</h2>
+    <p>
+      A calm, modern digital atlas designed to explore beautiful places,
+      inspiring cities, peaceful islands, and world-class universities —
+      all in one smooth experience.
+    </p>
+  </div>
+</div>
+
+  <section class="grid" style="margin-top:14px;">
+  <!-- Card 1 -->
+  <article class="card reveal">
+    <img src="./images/home/home-01.jpg" alt="Misty alpine lake">
+    <div class="card-body">
+      <h4>Misty Alpine Lake</h4>
+      <p>Quiet water, cold air, and mountains wrapped in clouds.</p>
+      <a class="btn" href="./index.html">Explore</a>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card reveal">
+    <img src="./images/home/home-02.jpg" alt="Cliffside coastline">
+    <div class="card-body">
+      <h4>Cliffside Coastline</h4>
+      <p>Wild waves, rocky edges, and bright ocean colors.</p>
+      <a class="btn" href="./pages/islands.html">Explore</a>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card reveal">
+    <img src="./images/home/home-03.jpg" alt="Frozen peak above the clouds">
+    <div class="card-body">
+      <h4>Frozen Peak</h4>
+      <p>A sharp summit rising through the sky—clean, calm, and surreal.</p>
+      <a class="btn" href="./pages/cities.html">Explore</a>
+    </div>
+  </article>
+</section>
+    
+ <!-- Note -->
+<section class="card reveal"
+ style="margin-top:16px;">
+  <div class="card-body">
+    <h4 style="margin:0 0 6px;">About this page</h4>
+    <p style="margin:0; opacity:.9; line-height:1.7;">
+      This homepage is quick visual entry to the Atlas. Use the cards above to explore Cities,
+      Islands, and Universities with clean visuals and simple navigation.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div><strong>Atlas of Aetheria</strong> — Shehab Aljabri</div>
+    <div>© 2026 • Sana’a University</div>
+  </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

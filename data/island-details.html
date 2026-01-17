@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Island Details • Atlas of Aetheria</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+  <main class="container" style="padding:26px 0 40px;">
+    <a class="btn" href="../pages/islands.html">← Back to Islands</a>
+
+    <div class="sep"></div>
+
+    <section class="panel reveal">
+      <h2 id="title">Island</h2>
+      <p id="sub" class="hint"></p>
+      <div class="sep"></div>
+      <img id="img" style="width:100%;border-radius:18px;border:1px solid var(--stroke);box-shadow:var(--shadow);max-height:420px;object-fit:cover" alt="island">
+      <ul class="list" id="facts"></ul>
+    </section>
+  </main>
+
+  <script src="./data.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const item = window.AETHERIA_DATA.islands.find(x => x.id === id) || window.AETHERIA_DATA.islands[0];
+
+    document.getElementById("title").textContent = item.title;
+    document.getElementById("sub").textContent = item.subtitle;
+    document.getElementById("img").src = item.image.replace("..","..");
+
+    const ul = document.getElementById("facts");
+    ul.innerHTML = "";
+    item.facts.forEach(t => {
+      const li = document.createElement("li");
+      li.textContent = t;
+      ul.appendChild(li);
+    });
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
